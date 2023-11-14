@@ -1,0 +1,35 @@
+GET http://localhost:5000/allcontacts
+
+###
+
+GET http://localhost:5000/allcontacts/6552f17c30926bb32267e2b2
+
+###
+
+POST http://localhost:5000/allcontacts/
+Content-Type: application/json
+
+{
+    "firstName" : "test",
+    "lastName" : "TEST Monkey",
+    "nickName" : "Pirate",
+    "BOB" : "2012-05-05",
+    "mobileNumbers" : [4646544,45545],
+    "emails" : ["adcajad@fmai.com","ahdha@gmail.com"]
+}
+
+###
+DELETE http://localhost:5000/allcontacts/6552ef17fb7d45ccbf334f59
+
+###
+PATCH http://localhost:5000/allcontacts/6552f17c30926bb32267e2b2
+Content-Type: application/json
+
+{
+    "firstName" : "test",
+    "lastName" : "TEST Monkey",
+    "nickName" : "Monkey King",
+    "BOB" : "2012-05-05",
+    "mobileNumbers" : [4646544,45545],
+    "emails" : ["adcajad@fmai.com","ahdha@gmail.com"]
+}
